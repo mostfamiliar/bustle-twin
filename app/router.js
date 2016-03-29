@@ -6,6 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('story');
+  this.route('story', {path: '/story/:story_id'});
 });
 
 export default Router;

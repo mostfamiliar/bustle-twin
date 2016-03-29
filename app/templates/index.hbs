@@ -1,5 +1,5 @@
 <ul>
   {{#each model as |story|}}
-     <li>{{story.author}}'s {{story.headline}} in {{story.body}}</li>
+     <li>{{story-tile story=story update="update" destroyStory="destroyStory"}}</li>
   {{/each}}
 </ul>
