@@ -6,7 +6,6 @@ export default Ember.Component.extend({
     storyFormShow() {
       this.set('addNewStory', true);
     },
-
     save1() {
       var params = {
         author: this.get('author'),
