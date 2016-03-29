@@ -1,7 +1,3 @@
 <li>{{#link-to 'story' story.id}}{{story.headline}}{{/link-to}}
-  {{#if isImageShowing}}
     <p><img src={{story.image}} alt={{story.headline}} {{action 'imageHide'}}></p>
-  {{else}}
-    <button {{action 'imageShow'}}>Image</button>
-  {{/if}}
 </li>

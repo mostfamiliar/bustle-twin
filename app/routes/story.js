@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-   return this.store.findRecord('story', params.rental_id);
+   return this.store.findRecord('story', params.story_id);
  },
  actions: {
    update(story, params) {
@@ -14,7 +14,7 @@ export default Ember.Route.extend({
      story.save();
      this.transitionTo('index');
    },
-   destroyRental(story) {
+   destroyStory(story) {
      story.destroyRecord();
      this.transitionTo('index');
    }
